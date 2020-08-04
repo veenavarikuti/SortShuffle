@@ -1,0 +1,147 @@
+
+.container {
+    background-color: #EFEFEF;
+    border-top: 3px solid #BFBFBF;
+    overflow: hidden;
+}
+h2 {
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+}
+.num-panel {
+    width: 75vw;
+    height: 75vw;
+    
+    float: left;
+}
+.btn-panel {
+    float: left;
+    width: 23vw;
+    height: 75vw;
+}
+.card {
+  text-align: center;
+  vertical-align: middle;
+  width: 32%;
+  height: 32%;
+  float: left;
+}
+
+.card h4 {
+    vertical-align: middle;
+    color: #FFFFFF;
+}
+
+.content {
+    font-size: 4em;
+    padding: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.pale-blue {
+    background-color: #6F98A8;
+}
+
+.blue {
+    background-color: #2B8EAD;
+}
+
+
+.dark{
+    background-color: #2F454E;
+}
+
+.grey {
+    background-color: #BFBFBF;
+}
+
+/* Button styles */ 
+.blue-btn {
+    background-color: #72C3DC;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    clear: both;
+    display: block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 #2B8EAD;
+    border-radius: 5px;
+    width: 85%;
+    margin: 20px auto;
+    outline: none;  /* New Chrome behaviour for accessibility, recommended to retain outline */
+  }
+
+  /* On mouse-over, adding a shadow */
+.blue-btn:hover {
+    box-shadow: 0 8px 16px 0 #2F454E;
+  }
+  .disclaimer {
+      font-size: 11px;
+      color: #000000;
+      text-align: center;
+      margin: 0 auto 30px;
+  }
+
+  /* Portrait */
+@media only screen 
+and (min-width: 375px) 
+and (max-width: 768px) { 
+    .container {
+        background-color: transparent;
+    }
+    h2 {
+        margin: 0;
+        background-color: #333333;
+        color: #FFFFFF;
+    }
+    .num-panel, 
+    .btn-panel {
+        width: 100vw;
+        clear: both;
+    }
+    .btn-panel, .num-panel {
+        height: auto;
+        text-align: center;
+        margin: auto;
+    }
+    .card {
+        width: 80vw;
+        height: 40px;
+        background-color: #EFEFEF;
+        border-bottom: 3px solid #FFFFFF;
+        clear: both;
+    }
+    .card h4 {
+        vertical-align: middle;
+        font-size: 12px;
+        color: #000000;
+    }
+    .pale-blue {
+        border-left: 5px solid #6F98A8;
+    }
+    
+    .blue {
+        border-left: 5px solid #2B8EAD;
+    }
+    
+    
+    .dark{
+        border-left: 5px solid #2F454E;
+    }
+    
+    .grey {
+        border-left: 5px solid #BFBFBF;
+    }
+
+    .blue-btn {
+        display: inline;
+        width: auto;
+    }
+}
